@@ -1,8 +1,8 @@
-#exclude: |
-#  (?x)(
-#    ^lib/
-#  )
-files: 'lib/'
+exclude: |
+  (?x)(
+    lib/
+  )
+#files: 'lib/'
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
