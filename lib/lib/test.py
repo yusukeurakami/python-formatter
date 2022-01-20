@@ -1,12 +1,10 @@
-import glob
+import argparse
 import os
-import random
 import shutil
 
 import tqdm
 
 
-import argparse
 def main(args):
     target_folder = args.target_folder
     source_folder = args.source_folder

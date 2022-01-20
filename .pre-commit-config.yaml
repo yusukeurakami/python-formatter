@@ -1,7 +1,8 @@
 exclude: |
   (?x)(
-    lib/
+     /*/lib2/
   )
+
 #files: 'lib/'
 
 repos:
