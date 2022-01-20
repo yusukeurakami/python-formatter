@@ -1,6 +1,6 @@
 exclude: |
   (?x)(
-    ri/
+    lib/
   )
 #files: 'lib/'
 

@@ -1,8 +1,9 @@
 import glob
 import os
-import tqdm
 import random
 import shutil
+
+import tqdm
 
 
 import argparse
@@ -16,7 +17,7 @@ def main(args):
     source_selected = [x.split(".")[0] for x in os.listdir(image_src_path)]
     source_list = sorted(source_selected, key=lambda x: int(x))
     source_n = len(source_list)
-    print("size of source folder: ", source_n)
+    print("size of source folder:                                 ", source_n)
 
     for extention_idx, makedir in enumerate(makedir_list):
         dist_path = target_folder + makedir
