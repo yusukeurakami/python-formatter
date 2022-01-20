@@ -9,14 +9,17 @@ import tqdm
 def main(args):
     target_folder = args.target_folder
     source_folder = args.source_folder
-    makedir_list = ["/depth", "/image", "/instance", "/poses"]
+    makedir_list = ["/depth",
+                    "/image",
+                    "/instance",
+                    "/poses"]
     extention_list = [".png", ".png", ".png", ".txt"]
 
     image_src_path = source_folder + "/image"
     source_selected = [x.split(".")[0] for x in os.listdir(image_src_path)]
     source_list = sorted(source_selected, key=lambda x: int(x))
     source_n = len(source_list)
-    print("size of source folder: ", source_n)
+    print("size of                                                                                                  source folder: ", source_n)
 
     for extention_idx, makedir in enumerate(makedir_list):
         dist_path = target_folder + makedir
